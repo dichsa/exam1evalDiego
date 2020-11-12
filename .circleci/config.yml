@@ -7,10 +7,10 @@ jobs:
     steps:
       -checkout
       
-      -run:
+      - run:
         name: Saludos
         command: echo Diego Chilet Sanchis
         
-      -run: 
+      - run: 
         name: imprime la fecha actual
         command: date
