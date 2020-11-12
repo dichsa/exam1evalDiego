@@ -3,8 +3,14 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.4.1-node-browsers
+      
     steps:
       -checkout
+      
       -run:
         name: Saludos
         command: echo Diego Chilet Sanchis
+        
+      -run: 
+        name: imprime la fecha actual
+        command: date
